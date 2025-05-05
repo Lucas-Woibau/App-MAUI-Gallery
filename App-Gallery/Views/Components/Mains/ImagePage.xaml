@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="App_Gallery.Views.Components.Mains.ImagePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ImagePage">
+    <VerticalStackLayout>
+        <Image
+            x:Name="Imagem01"
+            Aspect="AspectFit"
+            HeightRequest="200"
+            IsAnimationPlaying="True"
+            IsOpaque="False"
+            Source="https://i.pinimg.com/originals/69/d0/7a/69d07a804e540703239408b6754dcfb2.gif"
+            WidthRequest="300" />
+        <Image Aspect="Center" Source="dotnet_bot.png" />
+    </VerticalStackLayout>
+</ContentPage>

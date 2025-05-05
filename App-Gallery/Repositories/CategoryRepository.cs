@@ -50,11 +50,30 @@ namespace App_Gallery.Repositories
                         Title = "BoxView",
                         Description = "Um componente que cria uma caixa para ser apresentada.",
                         Page = typeof(BoxViewPage)
-                    },new Component
+                    },
+                    new Component
                     {
                         Title = "Label",
                         Description = "Apresenta um texto na tela.",
                         Page = typeof(LabelPage)
+                    },
+                    new Component
+                    {
+                        Title = "Buttons",
+                        Description = "Apresenta um botão na tela.",
+                        Page = typeof(ButtonPage)
+                    },
+                    new Component
+                    {
+                        Title = "Images",
+                        Description = "Apresenta uma imagem na tela.",
+                        Page = typeof(ImagePage)
+                    },
+                    new Component
+                    {
+                        Title = "Images Button",
+                        Description = "Apresenta uma imagem com comportamento de botão.",
+                        Page = typeof(ImageButtonPage)
                     },
                 }
             });
