@@ -1,6 +1,8 @@
 ﻿using App_Gallery.Views.Layouts;
 using App_Gallery.Models;
 using App_Gallery.Views.Components.Mains;
+using App_Gallery.Views.Components.Visuals;
+using App_Gallery.Views.Components.Forms;
 
 namespace App_Gallery.Repositories
 {
@@ -75,6 +77,50 @@ namespace App_Gallery.Repositories
                         Description = "Apresenta uma imagem com comportamento de botão.",
                         Page = typeof(ImageButtonPage)
                     },
+                }
+            });
+
+            categories.Add(new Category
+            {
+                Name = "Visuais",
+                Components = new List<Component> {
+                    new Component {
+                        Title = "Frame",
+                        Description = "Caixa que envolve outros elementos.",
+                        Page = typeof(FramePage)
+                    }, 
+                     new Component {
+                        Title = "Border",
+                        Description = "Caixa que envolve outros elementos.",
+                        Page = typeof(BorderPage)
+                    }, 
+                     new Component {
+                        Title = "Shadow",
+                        Description = "Cria sombras em nossos elementos.",
+                        Page = typeof(ShadowPage)
+                    }
+                }
+            });
+
+            categories.Add(new Category
+            {
+                Name = "Formulários",
+                Components = new List<Component> {
+                    new Component {
+                        Title = "Entry",
+                        Description = "Cria uma caixa de entrada de textos.",
+                        Page = typeof(EntryPage)
+                    },
+                    new Component {
+                        Title = "Editor",
+                        Description = "Cria uma caixa de entrada de textos de múltiplas linhas.",
+                        Page = typeof(EditorPage)
+                    },
+                     new Component {
+                        Title = "Checkbox",
+                        Description = "Cria uma caixa de marcação.",
+                        Page = typeof(CheckboxPage)
+                    }
                 }
             });
 
