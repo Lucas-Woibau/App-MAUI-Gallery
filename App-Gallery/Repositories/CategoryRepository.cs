@@ -3,6 +3,7 @@ using App_Gallery.Models;
 using App_Gallery.Views.Components.Mains;
 using App_Gallery.Views.Components.Visuals;
 using App_Gallery.Views.Components.Forms;
+using App_Gallery.Views.Cells;
 
 namespace App_Gallery.Repositories
 {
@@ -165,6 +166,37 @@ namespace App_Gallery.Repositories
                 }
             });
 
+            categories.Add(new Category
+            {
+                Name = "Células",
+                Components = new List<Component> {
+                    new Component {
+                        Title = "TextCell",
+                        Description = "Apresenta até duas labels onde uma é destinada ao título e outra a descrição.",
+                        Page = typeof(TextCellPage)
+                    },
+                    new Component {
+                        Title = "ImageCell",
+                        Description = "Apresenta uma imagem com duas labels onde uma é destinada ao título e outra a descrição.",
+                        Page = typeof(ImageCellPage)
+                    },
+                    new Component {
+                        Title = "SwitchCell",
+                        Description = "Apresenta uma label em conjunto com um switch.",
+                        Page = typeof(SwitchCellPage)
+                    },
+                    new Component {
+                        Title = "EntryCell",
+                        Description = "Apresenta uma label em conjunto com um entry.",
+                        Page = typeof(EntryCellPage)
+                    },
+                    new Component {
+                        Title = "ViewCell",
+                        Description = "Permite criar a nossa célula com layout personalizado.",
+                        Page = typeof(ViewCellPage)
+                    }
+                }
+            });
             return categories;
         }
     }

@@ -13,7 +13,7 @@
                 <x:Array Type="{x:Type x:String}">
                     <x:String>FIAT</x:String>
                     <x:String>UNO</x:String>
-                    <x:String>CHREVROLET</x:String>
+                    <x:String>CHEVROLET</x:String>
                     <x:String>RENAUT</x:String>
                 </x:Array>
             </Picker.ItemsSource>
