@@ -38,7 +38,7 @@ namespace App_Gallery.Repositories
                         Title = "Flex layout",
                         Description = "Organiza os elementos de forma seguencial e possui muita personalização.",
                         Page= typeof(FlexLayoutPage)
-                    }
+                    },
                 }
             });
 
@@ -88,12 +88,12 @@ namespace App_Gallery.Repositories
                         Title = "Frame",
                         Description = "Caixa que envolve outros elementos.",
                         Page = typeof(FramePage)
-                    }, 
+                    },
                      new Component {
                         Title = "Border",
                         Description = "Caixa que envolve outros elementos.",
                         Page = typeof(BorderPage)
-                    }, 
+                    },
                      new Component {
                         Title = "Shadow",
                         Description = "Cria sombras em nossos elementos.",
@@ -120,6 +120,47 @@ namespace App_Gallery.Repositories
                         Title = "Checkbox",
                         Description = "Cria uma caixa de marcação.",
                         Page = typeof(CheckboxPage)
+                    },
+                     new Component {
+                        Title = "Radio Button",
+                        Description = "Cria uma caixa de marcação de escolha única.",
+                        Page = typeof(RadioButtonPage)
+                    },
+                     new Component {
+                        Title = "Switch",
+                        Description = "Caixa de marcação booleana.",
+                        Page = typeof(SwitchPage)
+                    },
+                    new Component
+                    {
+                        Title = "Stepper",
+                        Description = "Cria opções de incrementar ou decrementar um número.",
+                        Page= typeof(StepperPage)
+                    },
+                     new Component {
+                        Title = "Slider",
+                        Description = "Cria uma barra para incrementar ou decrementar um número.",
+                        Page = typeof(SliderPage)
+                    },
+                     new Component {
+                        Title = "Time Picker",
+                        Description = "Seleção da hora e minuto.",
+                        Page = typeof(TimePickerPage)
+                    },
+                     new Component {
+                        Title = "Date Picker",
+                        Description = "Seleção da data.",
+                        Page = typeof(DatePickerPage)
+                    },
+                     new Component {
+                        Title = "Search Bar",
+                        Description = "Campo de entrada de texto para pesquisa.",
+                        Page = typeof(SearchBarPage)
+                    },
+                     new Component {
+                        Title = "Picker",
+                        Description = "Selecionar um item da lista.",
+                        Page = typeof(PickerPage)
                     }
                 }
             });

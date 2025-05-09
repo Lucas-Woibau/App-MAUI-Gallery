@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="App_Gallery.Views.Components.Forms.RadioButtonPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="RadioButtonPage">
+    <VerticalStackLayout Padding="10">
+        <StackLayout>
+            <Label
+                HorizontalOptions="Center"
+                Text="Qual linguagem de programação você mais gosta?"
+                VerticalOptions="Center" />
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="C#" />
+            <RadioButton
+                BorderColor="Blue"
+                BorderWidth="1"
+                Content="Java"
+                CornerRadius="10" />
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="Javascript" />
+            <Label x:Name="LblResultaAsk01" />
+        </StackLayout>
+        <StackLayout RadioButtonGroup.GroupName="ask02">
+            <Label
+                HorizontalOptions="Center"
+                Text="Qual é o mascote do .NET MAUI??"
+                VerticalOptions="Center" />
+            <RadioButton Value="Robot">
+                <RadioButton.Content>
+                    <HorizontalStackLayout>
+                        <Label Text="C#" />
+                        <Image HeightRequest="30" Source="dotnet_bot.png" />
+                    </HorizontalStackLayout>
+                </RadioButton.Content>
+            </RadioButton>
+            <RadioButton Content="Java" />
+            <RadioButton Content="Javascript" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
