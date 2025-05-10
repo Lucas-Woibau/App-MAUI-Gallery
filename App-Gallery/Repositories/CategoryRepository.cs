@@ -4,6 +4,7 @@ using App_Gallery.Views.Components.Mains;
 using App_Gallery.Views.Components.Visuals;
 using App_Gallery.Views.Components.Forms;
 using App_Gallery.Views.Cells;
+using App_Gallery.Views.Lists;
 
 namespace App_Gallery.Repositories
 {
@@ -194,6 +195,27 @@ namespace App_Gallery.Repositories
                         Title = "ViewCell",
                         Description = "Permite criar a nossa célula com layout personalizado.",
                         Page = typeof(ViewCellPage)
+                    }
+                }
+            });
+            categories.Add(new Category
+            {
+                Name = "Listas e Coleções",
+                Components = new List<Component> {
+                    new Component {
+                        Title = "TableView",
+                        Description = "Apresenta células em linhas separadas e permite agrupar por seção.",
+                        Page = typeof(TableViewPage)
+                    },
+                    new Component {
+                        Title = "Picker",
+                        Description = "Apresenta uma lista de seleção única.",
+                        Page = typeof(PickerListPage)
+                    },
+                    new Component {
+                        Title = "ListView",
+                        Description = "Apresenta uma lista de itens.",
+                        Page = typeof(ListViewPage)
                     }
                 }
             });

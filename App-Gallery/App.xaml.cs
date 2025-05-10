@@ -6,8 +6,6 @@
         {
             InitializeComponent();
 
-            Current.UserAppTheme = AppTheme.Light;
-
             MainPage = new AppFlyout();
         }
     }
